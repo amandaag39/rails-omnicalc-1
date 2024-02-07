@@ -19,4 +19,7 @@ Rails.application.routes.draw do
   get("/random/new", { :controller => "calculators", :action => "random"})
 
   get("/random/results", { :controller => "calculators", :action => "random_results"})
+
+  # Home page navigation
+  get("/", { :controller => "calculators", :action => "square"})
 end
